@@ -184,6 +184,15 @@ header a {
   align-self: auto;
   margin-left: 50px;
 }
+@media only screen and (max-width: 500px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-left: 2%;
+    align-content: center;
+  }
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -203,11 +212,25 @@ header a {
 .home .title .funBus {
   padding-bottom: 3%;
 }
+@media only screen and (max-width: 500px) {
+  .home .title {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+}
 .home .content-section {
   margin: 30px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+@media only screen and (max-width: 500px) {
+  .home .content-section {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
 }
 .home .content-section .text-content {
   width: 48%;
@@ -231,6 +254,13 @@ header a {
   padding-right: 1%;
   padding-left: 0;
 }
+@media only screen and (max-width: 500px) {
+  .home .inverse-content {
+    display: flex;
+    flex-direction: column-reverse;
+    align-content: center;
+  }
+}
 .home .content-destination {
   width: 75%;
   margin: 0 auto 30px;
@@ -244,9 +274,24 @@ header a {
   display: flex;
   justify-content: space-between;
 }
+@media only screen and (max-width: 500px) {
+  .home .content-pick {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media only screen and (max-width: 500px) {
+  .home .content-pick .destination {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    margin: auto;
+  }
 }
 .home .content-pick .btn {
   background-color: #008080;
@@ -257,4 +302,9 @@ header a {
   margin: 4px 2px;
   width: 80%;
   border-radius: 15px;
+}
+@media only screen and (max-width: 500px) {
+  .home .content-pick .btn {
+    margin-bottom: 20px;
+  }
 }
