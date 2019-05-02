@@ -168,6 +168,22 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: auto;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  border-bottom: 2px dashed #C0C0C0;
+}
+header a {
+  font-size: 1.6rem;
+  font-weight: bold;
+  align-self: auto;
+  margin-left: 50px;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -178,6 +194,14 @@ img {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+.home .title {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 2px dashed #C0C0C0;
+}
+.home .title .funBus {
+  padding-bottom: 3%;
 }
 .home .content-section {
   margin: 30px 0;
@@ -198,7 +222,6 @@ img {
 }
 .home .inverse-content {
   padding-bottom: 30px;
-  border-bottom: 2px dashed #C0C0C0;
 }
 .home .inverse-content .text-content {
   padding-left: 1%;
@@ -224,4 +247,14 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .btn {
+  background-color: #008080;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  width: 80%;
+  border-radius: 15px;
 }
