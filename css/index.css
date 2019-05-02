@@ -178,6 +178,15 @@ header {
   padding-bottom: 2%;
   border-bottom: 2px dashed #C0C0C0;
 }
+@media only screen and (max-width: 500px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-left: 15px;
+    align-content: center;
+  }
+}
 header a {
   font-size: 1.6rem;
   font-weight: bold;
@@ -185,12 +194,8 @@ header a {
   margin-left: 50px;
 }
 @media only screen and (max-width: 500px) {
-  header {
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-    margin-left: 2%;
-    align-content: center;
+  header a {
+    margin-left: 25px;
   }
 }
 .footer {
@@ -209,15 +214,17 @@ header a {
   flex-direction: column;
   border-bottom: 2px dashed #C0C0C0;
 }
-.home .title .funBus {
-  padding-bottom: 3%;
-}
 @media only screen and (max-width: 500px) {
   .home .title {
     display: flex;
     flex-direction: column;
     align-content: center;
+    margin-left: 10px;
+    margin-right: 10px;
   }
+}
+.home .title .funBus {
+  padding-bottom: 3%;
 }
 .home .content-section {
   margin: 30px 0;
